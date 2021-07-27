@@ -1,0 +1,8 @@
+txt	Some sample text or a quote or citation that comprises the data. (Jones, 2012, p. 234)	tag1,tag2,tag3,tag4,example-tag
+img	example.png	tag2,tag3,example-tag
+uri	example.com	tag4,tag5
+fil	example.txt	tag1,tag5,another-tag
+snd	example.ogg	tag5,tag2
+img	example.jpg	image,tag1,another-tag
+img	example.svg	image,tag2
+vid	example.ogv	video,tag3,tag2

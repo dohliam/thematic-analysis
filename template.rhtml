@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/baguetteBox.min.css">
+    <link type="text/css" rel="stylesheet" href="css/concise.min.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link type="text/css" rel="stylesheet" href="css/thematic-analysis.css">
+    <script type="text/javascript" src="js/baguetteBox.min.js"></script>
+    <script type="text/javascript" src="js/thematic-analysis.js"></script>
+    <title>Thematic Analysis Parser - Results</title>
+  </head>
+  <body>
+    <h1>Thematic Analysis Parser - Results</h1>
+
+    <a href="#modal-index"><button id="index_headings">Index</button></a>
+
+    <a name='h2_tags'></a><h2>Tags</h2>
+      <div id="tags" class="data-container">
+<%=$tags_out%>
+      </div>
+
+    <a name='h2_text'></a><h2>Text</h2>
+      <div id="text" class="data-container">
+        <div grid>
+<%=$text_out%>
+        </div>
+      </div>
+
+    <a name='h2_links'></a><h2>Links</h2>
+      <div id="links" class="data-container">
+        <div grid>
+<%=$links_out%>
+        </div>
+      </div>
+
+    <a name='h2_files'></a><h2>Files</h2>
+      <div id="files" class="data-container">
+        <div grid>
+<%=$files_out%>
+        </div>
+      </div>
+
+    <a name='h2_images'></a><h2>Images</h2>
+      <div id="images" class="data-container">
+        <div grid>
+<%=$images_out%>
+        </div>
+      </div>
+
+    <a name='h2_audio'></a><h2>Audio</h2>
+      <div id="audio" class="data-container">
+        <div grid>
+<%=$audio_out%>
+        </div>
+      </div>
+
+    <a name='h2_video'></a><h2>Video</h2>
+      <div id="video" class="data-container">
+        <div grid>
+<%=$videos_out%>
+        </div>
+      </div>
+
+    <footer>
+      View on <a href="https://github.com/dohliam/thematic-analysis">Github</a>
+    </footer>
+
+    <section class="modal--show" id="modal-index" tabindex="-1"
+      role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+      <div class="modal-inner">
+        <header>
+          <h2 id="modal-label">Index</h2>
+        </header>
+        <div class="modal-content">
+          <div id="index-content">
+            <h3>Heading index</h3>
+            <ul>
+              <li><a href='#h2_tags'>Tags</a></li>
+              <li><a href='#h2_text'>Text</a></li>
+              <li><a href='#h2_links'>Links</a></li>
+              <li><a href='#h2_files'>Files</a></li>
+              <li><a href='#h2_images'>Images</a></li>
+              <li><a href='#h2_audio'>Audio</a></li>
+              <li><a href='#h2_video'>Video</a></li>
+            </ul>
+            <h3>Tag cloud</h3>
+            <div id="tag-cloud">
+<%=$tag_cloud%>
+            </div>
+            <h3>Tag index</h3>
+            <div id="tag-index">
+              <ul>
+<%=$tag_index%>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+    </section>
+
+    <section class="modal--show" id="modal-tagbox" tabindex="-1"
+      role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+      <div class="modal-inner">
+        <header>
+          <h2 id="modal-label">Tags</h2>
+        </header>
+        <div class="modal-content">
+          <div id="tagbox">&nbsp;</div>
+        </div>
+      </div>
+      <a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+    </section>
+
+    <section class="modal--show" id="modal-associated" tabindex="-1"
+      role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+      <div class="modal-inner">
+        <header>
+          <h2 id="modal-label">Associated tags</h2>
+        </header>
+        <div class="modal-content">
+          <div id="associated-tags">
+<%=$associated_tags%>
+          </div>
+        </div>
+      </div>
+      <a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+    </section>
+
+    <section class="modal--show" id="modal-infobox" tabindex="-1"
+      role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+      <div class="modal-inner">
+        <header>
+          <h2 id="modal-label">Item info</h2>
+        </header>
+        <div class="modal-content">
+          <div id="infobox">&nbsp;</div>
+        </div>
+      </div>
+      <a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+    </section>
+
+    <script src="js/modal.js"></script>
+  </body>
+</html>
