@@ -122,3 +122,7 @@ The columns are ordered as follows:
   * [Example JPG Image File](https://commons.wikimedia.org/wiki/File:Example_image_not_to_be_used_in_article_namespace.jpg) - Wikimedia Commons
   * [Example OGV Video File](https://commons.wikimedia.org/wiki/File:Testing.ogv) - Wikimedia Commons
 * Sample text from [Wikipedia](https://en.wikipedia.org/wiki/Battle_of_Caishi)
+
+## License
+
+GNU GPLv3 (see [license file](COPYING).
